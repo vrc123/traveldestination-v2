@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new travel destination</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Create new travel destination</h1>
+        <nav>
+            <a id="show" href="index.html">Show</a>
+            <a id="create" class="active" href="create.html">Create</a>
+        </nav>
+    </header>
+    <div class="formContainer">
+        <form id="createForm">
+            <label for="title">Title:<span>*</span></label>
+            <input id="title" type="text">
+            <label for="description">Description:<span>*</span></label>
+            <textarea id="description"></textarea>
+            <div class="dates">
+                <div class="dateFromDiv">
+                    <label for="dateFrom">Date from:</label>
+                    <input id="dateFrom" type="date">
+                </div>
+                <div class="dateToDiv">
+                    <label for="dateTo">Date to:</label>
+                    <input id="dateTo" type="date">
+                </div>
+            </div>
+            <label for="country">Country:<span>*</span></label>
+            <input id="country" type="text">
+            <label for="location">Location:<span>*</span></label>
+            <input id="location" type="text">
+            <div class="coordinates">
+                <div class="latitudeDiv">
+                    <label for="latitude">Latitude:</label>
+                    <input id="latitude" type="text">
+                </div>
+                <div class="longitudeDiv">
+                    <label for="longitude">Longitude:</label>
+                    <input id="longitude" type="text">
+                </div>
+            </div>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+
+    <script src="../http-methods/post.js"></script>
+    <script src="../scripts/create-script.js"></script>
+</body>
+</html>
